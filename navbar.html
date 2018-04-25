@@ -4,17 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Tosekwa Responsive Menu</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+        $(".hamburger-btn .fa-times").hide();
+
+        $(".hamburger-btn .fa-bars").click(function(){
+            $(this).hide();
+            $(".hamburger-btn .fa-times").show();
+            $(".primary-nav").addClass("active");
+        });
+
+        $(".hamburger-btn .fa-times").click(function(){
+            $(this).hide();
+            $(".hamburger-btn .fa-bars").show();
+            $(".primary-nav").removeClass("active");
+        });
+        });
+    </script>
 </head>
 <body>
     <nav class="navbar">
+        <div class="hamburger-btn">
+            <i class="fa fa-bars" area-hidden="true"></i>
+            <i class="fa fa-times" area-hidden="true"></i>
+        </div>
         <ul class="primary-nav">
-        <li class="nav-item"><a class="nav-link">Qui sommes-nous</a></li>
-        <li class="nav-item"><a class="nav-link">Notre Organisation</a></li>
-        <li class="nav-item"><a class="nav-link">Donations</a></li>
-        <li class="nav-item"><a class="nav-link">Photos</a></li>
-        <li class="nav-item"><a class="nav-link">Adhérer</a></li>
+            <li class="nav-item"><a class="nav-link">Qui sommes-nous</a></li>
+            <li class="nav-item"><a class="nav-link">Notre Organisation</a></li>
+            <li class="nav-item"><a class="nav-link">Donations</a></li>
+            <li class="nav-item"><a class="nav-link">Photos</a></li>
+            <li class="nav-item"><a class="nav-link">Adhérer</a></li>
         </ul>
     </nav>
 </body>

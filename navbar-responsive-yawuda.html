@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Responsive </title>
+  <!-- <link rel="stylesheet" href="style.css"> -->
+  <link rel="stylesheet" href="navbar-responsive-yawuda-style.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      $(".hamburger-btn .fa-times").hide();
+
+      $(".hamburger-btn .fa-bars").click(function(){
+        $(this).hide();
+        $(".hamburger-btn .fa-times").show();
+        $(".mob ul").addClass("active");
+      });
+
+      $(".hamburger-btn .fa-times").click(function(){
+        $(this).hide();
+        $(".hamburger-btn .fa-bars").show();
+        $(".mob ul").removeClass("active");
+      });
+    });
+  </script>
+</head>
+<body>
+    <nav class="desk">
+      <ul>
+        <li class="#"><a href="#">Qui sommes-nous</a></li>
+        <li><a href="#">Organisation</a></li>
+        <li><a href="#">Donations</a></li>
+        <li><a href="#">Photos</a></li>
+        <li><a href="#">Adhérer</a></li>
+      </ul>
+    </nav>
+
+    <nav class="mob">
+      <div class="hamburger-btn">
+        <i class="fa fa-bars" area-hidden="true"></i>
+        <i class="fa fa-times" area-hidden="true"></i>
+      </div>
+      <ul>
+        <li class="#"><a href="#">Qui sommes-nous</a></li>
+        <li><a href="#">Organisation</a></li>
+        <li><a href="#">Donations</a></li>
+        <li><a href="#">Photos</a></li>
+        <li><a href="#">Adhérer</a></li>
+      </ul>
+    </nav>
+</body>
+</html>
