@@ -1,0 +1,53 @@
+@import url(https://fonts.googleapis.com/css?family=Oswald);
+
+.website__header{
+  display: flex;
+  justify-content: space-between; 
+}
+
+body{
+  background-color: #013159;
+  color: #fff;
+}
+.website__title{
+  font-size: 2rem;
+  margin-left:2rem;
+  letter-spacing: 4px;
+  font-family: Oswald, sans-serif;
+}
+
+.website__logo{
+  font-size: 3rem;
+}
+.livre__bleu__logo{
+  color: #096CBA;
+}
+
+.search__input{
+  width:17vw;
+  height:5vh;
+  border-radius:4px;
+  border:none;
+}
+
+.website__search{
+  font-size: 2rem;
+  outline: none;
+}
+
+.fa-search{
+  cursor: pointer;
+  color: #013159;
+  position: relative;
+  transform: scale(0.6);
+  left:-40px;
+  top: 9%;
+}
+
+.tosekwa_logo{
+    width:4rem;
+    height:4rem;
+    padding: 10px;
+    background-color: #fff;
+    border-radius:45%;
+}
